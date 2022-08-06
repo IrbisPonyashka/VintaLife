@@ -1,0 +1,13 @@
+footer.footer 
+    .footer__content.row
+        a.footer__content-logp(href="#header") 
+            img.footer__content-logo(src="images/Logobg.svg", alt="")
+        -let list = ['Преимущества','Каталог','Партнеры','Рассрочка','Контакты']
+        ul.footer__content-list 
+            each el in list 
+                li
+                    a.footer__content-link(href="")=el
+        .footer__content-buttons 
+            a.footer__content-num(href="#+7 (962) 88-777-51") +7 (962) 88-777-51 
+            button.footer__content-btn.button Заказать обратный звонок
+    p.footer__content-last Все права защищены © 2022  

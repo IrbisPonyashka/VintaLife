@@ -1,0 +1,44 @@
+.main__gallery.row
+    .main__gallery-content
+        .main__gallery-head 
+            a.main__gallery-close.icon-cross.close(href="#!") 
+            h2.main__gallery-title АРТ ДЕКО
+        -let arr =['-1','-2','-3','-4','-5','-6'];
+        .main__gallery-images
+            each el in arr 
+                img(src='images/kitchen'+el+'.jpg', alt="" class="main__gallery-img") 
+            img.main__gallery-img(src="images/kitchen-7.jpeg", alt="")
+            img.main__gallery-img(src="images/kitchen-8.jpg", alt="")
+        .main__gallery-info
+            .main__gallery-descr  
+                p.main__gallery-text Как правило наш расчет кухни дешевле на 15-40% чем в других компаниях по такому же проекту
+                p.main__gallery-call Позвоните:   <span>+7 (962) 887-77-51</span>  или оставьте заявку на расчёт и мы удивим Вас ценой
+            form.main__gallery-form#form2(action="/" method="POST")
+                label.main__gallery-label.label  
+                    input.main__gallery-input.input(type="text" placeholder="Имя" name="name") 
+                label.main__gallery-label.label
+                    input.main__gallery-input.input(type="text" placeholder="Ваш номер" name="number") 
+                .main__gallery-btns.btns 
+                    button.main__gallery-btn.btn Отправить заявку
+                    p Нажимая на кнопку вы даете согласие на обработку данных
+        -let ar = ['-9','-10','-11','-12']
+        .main__gallery-images
+            each item in ar 
+                img.main__gallery-image(src="images/kitchen"+item+".jpg", alt="")  
+        .main__gallery-info
+            .main__gallery-descr  
+                p.main__gallery-text Откройте полный каталог кухонь в стиле Арт Деко
+                p.main__gallery-call Укажите свой телефон. Менеджер поможет разобраться в каталоге
+            form.main__gallery-form#form2(action="/" method="POST")
+                label.main__gallery-label.label
+                    input.main__gallery-input.input(type="text" placeholder="Имя" )
+                label.main__gallery-inp.label  
+                    input.main__gallery-input.input(type="text" placeholder="Ваш номер" )
+                    .main__gallery-checkout
+                        p Использовать Whats App 
+                        input.main__gallery-check(type="checkbox") 
+                .main__gallery-btns.btns 
+                    button.main__gallery-btn.btn Отправить заявку
+                    p Нажимая на кнопку вы даете согласие на обработку данных
+
+    

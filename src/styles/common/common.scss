@@ -1,0 +1,73 @@
+$Light:#ffff;
+$Dark:#0F0F0F;
+$white:#ffff;
+$black:#000000;
+$text:#2D2D2D;
+$green:#102F28;
+$red:#C73D42;
+
+.body.light{
+    --Light:#fff;
+    --Dark:#0F0F0F;
+    --white:#ffff;
+    --black:#2D2D2D;
+    --text:#2D2D2D;
+    --background:#2D2D2D;
+    --green:#102F28;
+    --red:#C73D42;
+    --bgLight:#F4F4F4;
+}
+.body.dark{
+    --Light:#0F0F0F;
+    --Dark:#fff;
+    --white:#ffff;
+    --black:#000000;
+    --text:#fff;
+    --green:#fff;
+    --red:#C73D42;
+    --bgLight:#0A0A0A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@font-face{
+    font-family: 'MT';
+    src: url(../fonts/Monotype/MonotypeCorsiva-Regular.ttf);
+}
+@font-face{
+    font-family: 'SM';
+    src: url(../fonts/SovMode/SovMod-Regular.ttf);
+}
+
+$Webfonts:  ('brands-400', 400),
+            ('light-300', 300),
+            ('duotone-900', 900),
+            ('regular-400', 401),
+            ('solid-900', 901);
+            
+@each $name, $weight in $Webfonts {
+    @font-face {
+        font-family: 'Webfonts';
+        src: url(../fonts/webfonts/fa-#{$name}.ttf);
+        font-weight: $weight;
+    }
+} 
+
+// $Monotype:('Regular', 400);
+
+// @each $name, $weight in $Monotype {
+//     @font-face {
+//         font-family: 'Monotype';
+//         src: url(../fonts/Monotype/MonotypeCorsiva-Regular.ttf);
+//         font-weight: $weight;
+//     }
+// } 
+// $SovMode:('Regular', 400);
+
+// @each $name, $weight in $SovMode {
+//     @font-face {
+//         font-family: 'SovMode';
+//         src: url(../fonts/SovMode/SovMod-Regular.ttf);
+//         font-weight: $weight;
+//     }
+// } 

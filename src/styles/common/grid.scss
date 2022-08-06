@@ -1,0 +1,143 @@
+$max:1920px;
+$boxXl:1640px;
+$box:1480px;
+$xxl:1320px;
+$xl:1140px;
+$lg:1050px;
+$md:992px;
+$sm:768px;
+$xs:576px;
+$gutters:30px;
+$gutters-side:calc($gutters / 2);
+
+
+// CONTAINER
+@mixin container($padding: $gutters-side) {
+    max-width: $max;
+    width: 100%;
+    margin: 0 auto;
+    
+    @include media($boxXl){
+        max-width: 1640px;
+    }@include media($box){
+        max-width: $box;
+    }
+    @include media($xxl){
+        max-width: $xxl;
+    }
+    @include media($xl){
+        max-width: $xl;
+    }
+    @include media($lg){
+        max-width: $lg;
+    }
+    @include media($md){
+        max-width: $md;
+    }
+    @include media($sm){
+        max-width: $sm;
+    }
+    @include media($xs){
+        max-width: 100%;
+    }
+}
+// ROW
+@mixin row($padding: $gutters-side) {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    @if $padding != 0{
+        padding:0 -$padding;
+    }
+    @include media($boxXl){
+        max-width:$box;
+    }@include media($box){
+        max-width:$xxl;
+    }
+    @include media($xxl){
+        max-width: $xl;
+    }
+    @include media($xl){
+        max-width: $lg;
+    }
+    @include media($lg){
+        max-width: $md;
+    }
+    @include media($md){
+        max-width: $sm;
+    }
+    @include media($sm){
+        max-width: $xs;
+    }
+    @include media($xs){
+        max-width: 100%;
+    }
+}
+
+// INPUT
+@mixin input() {
+    @include media($box){
+        max-width:410px;
+    }
+    @include media($xxl){
+        max-width: 360px;
+    }
+    @include media($xl){
+        max-width: 320px;
+    }
+    @include media($lg){
+        max-width: 280px;
+    }
+    @include media($md){
+        max-width: 230px;
+    }
+    @include media($sm){
+        max-width: 180px;
+    }
+    @include media($xs){
+        max-width: 160px;
+    }
+}
+
+// TITLE
+@mixin title() {
+    @include media($boxXl){
+        font-size: 65px;
+    }@include media($box){
+        font-size: 63px;
+    }
+    @include media($xxl){
+        font-size: 58px;
+    }
+    @include media($xl){
+        font-size: 52px;
+    }
+    @include media($lg){
+        font-size: 46px;
+    }
+    @include media($md){
+        font-size: 40px;
+    }
+    @include media($sm){
+        font-size: 35px;
+    }
+    @include media($sm){
+        font-size: 30px;
+    }
+}
+
+@mixin media($size : $xl) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
+
+
+@mixin text-limit($line:4) {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+}

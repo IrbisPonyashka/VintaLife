@@ -1,0 +1,90 @@
+.main__content
+    .main__condition
+        .main__condition-content#condition   
+            .main__condition-texts
+                p.main__condition-text Гарантия
+                p.main__condition-price 5 лет
+            .main__condition-texts
+                p.main__condition-text Сроки работ
+                p.main__condition-price 5 дней
+            .main__condition-texts
+                p.main__condition-text Замер и дизайн
+                p.main__condition-price бесплатно
+            .main__condition-texts
+                p.main__condition-text Доставка
+                p.main__condition-price бесплатно
+            .main__condition-texts
+                p.main__condition-text Монтажнтия
+                p.main__condition-price бесплатно
+    .main__kitchen#catalog
+        h2.main__kitchen-title Каталог кухонь по стилям
+        -var imgs = [{0:"images/0.png",1:'АРТ ДЕКО',2:'от 49 990 руб.',3:'Перейти в каталог'},{0:"images/1.png",1:'МИНИМАЛИЗМ ХАЙТЕК МОДЕРН ',2:'от 49 990 руб.',3:'Перейти в каталог'},{0:"images/2.png",1:' ЛОФТ ИНДАСТРИАЛ',2:'от 49 990 руб.',3:'Перейти в каталог'},{0:"images/3.jpg",1:'НЕОКЛАССИКА',2:'от 49 990 руб.',3:'Перейти в каталог'},{0:"images/4.png",1:'ПРОВАНС ШЕБИ ШИК КАНТРИ',2:'от 49 990 руб.',3:'Перейти в каталог'},{0:"images/5.png",1:' СКАНДИНАВСКИЙ',2:'от 49 990 руб.',3:'Перейти в каталог'}]
+        .main__kitchen-content
+            .main__kitchen-block    
+                .main__kitchen-slider 
+                    each item in imgs   
+                        .main__kitchen-item 
+                            img.main__kitchen-img(src=item[0], alt="")
+                            h3.main__kitchen-text=item[1]
+                            .main__kitchen-hover 
+                                p.main__kitchen-price=item[2]
+                                a.main__kitchen-link(href="#!")=item[3]
+                        //- .main__kitchen-icons 
+            a.main__kitchen-left.icon.icon-left(href="#!") 
+            a.main__kitchen-right.icon.icon-right(href="#!")
+    include popup.pug
+        
+
+
+
+
+
+  
+
+//- -var imgs = [
+//-         {imgUrl: './images/1.png', title: 'АРТ ДЕКО', price: 'от 49 990 руб.', link: 'Перейти в каталог' },
+//-         {imgUrl: './images/2.png', title: 'МИНИМАЛИЗМ ХАЙТЕК МОДЕРН', price: 'от 49 990 руб.', link: 'Перейти в каталог' },
+//-         {imgUrl: './images/3.png', title: 'ЛОФТ ИНДАСТРИАЛ', price: 'от 49 990 руб.', link: 'Перейти в каталог' }
+//-             ] 
+//-       each item in imgs
+//-     .main__kitchen-content  
+        //- .main__kitchen-item
+        //-     img.main__kitchen-img(src="images/1.png", alt="") 
+        //-     h3.main__kitchen-text АРТ ДЕКО
+        //-     p.main__kitchen-price от 49 990 руб.
+        //-     a.main__kitchen-link Перейти в каталог
+        //- .main__kitchen-item
+        //-     img.main__kitchen-img(src="images/2.png", alt="") 
+        //-     h3.main__kitchen-text МИНИМАЛИЗМ<br>ХАЙТЕК</br> МОДЕРН
+        //-     p.main__kitchen-price от 49 990 руб.
+        //-     a.main__kitchen-link Перейти в каталог
+        //- .main__kitchen-item
+        //-     img.main__kitchen-img(src="images/3.png", alt="") 
+        //-     h3.main__kitchen-text ЛОФТ <br>ИНДАСТРИАЛ</br>
+        //-     p.main__kitchen-price от 49 990 руб.
+        //-     a.main__kitchen-link Перейти в каталог
+    
+    
+    
+    
+//- .main__kitchen.row
+//-     h2.main__kitchen-title Каталог кухонь по стилям 
+//-     -var imgs = [{0:"images/0.png",1:'АРТ ДЕКО',2:'от 49 990 руб.',3:'Перейти в каталог'},{0:"images/1.png",1:'МИНИМАЛИЗМ ХАЙТЕК МОДЕРН ',2:'от 49 990 руб.',3:'Перейти в каталог'},{0:"images/2.png",1:' ЛОФТ ИНДАСТРИАЛ',2:'от 49 990 руб.',3:'Перейти в каталог'}]
+//-     .main__kitchen-content
+//-         a.main__kitchen-left.icon.icon-left(href="#!") 
+//-         a.main__kitchen-right.icon.icon-right(href="#!") 
+//-         each item in imgs   
+//-             .main__kitchen-item
+//-                     img.main__kitchen-img(src=item[0], alt="")
+//-                     h3.main__kitchen-text=item[1]
+//-                     .main__kitchen-hover 
+//-                         p.main__kitchen-price=item[2]
+//-                         p.main__kitchen-link=item[3]
+    
+    
+    
+    
+    
+
+
+    

@@ -1,0 +1,191 @@
+.main__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 110px 30px 0 30px;
+    @include media($xl){
+        flex-direction: column;
+    }
+    &-image{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        max-width: 910px;
+        min-width: 375px;
+        width: 100%;
+    }
+    &-input{
+        background: none;
+    }
+    &-img{
+            width: 100%;
+            height: 100%;
+        &:nth-of-type(2){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    }
+    &-title{
+        font-size: 40px;
+        line-height: 105%;
+        font-family: 'SM';
+        color: var(--text);
+        @include media($xl){
+            text-align: center;
+            @include title()
+        }
+    }
+    &-btns p{
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--text);
+    }
+    &-register{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        max-width: 555px;
+        width: 100%;
+        @include media($xl){
+            align-items: center;
+        }
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 105%;
+        letter-spacing: 0.11em;
+        font-family: 'MT';
+        opacity: 0.5;
+        margin-top: 65px;
+        color: var(--text);
+    }
+    &-descr{
+        font-size: 25px;
+        line-height: 105%;
+        font-family: 'Montserrat';
+        color: var(--text);
+        @include media($xl){
+            text-align: center;
+        }
+    }
+}
+.main__adress{
+    margin: 100px 0 110px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 110px 30px 0 30px;
+    gap: 20px;
+    @include media($xl){
+        flex-direction: column;
+    }
+    &-map{
+        max-width: 680px;
+        min-width: 280px;
+        width: 100%;
+        height: 680px;
+        @include media($xs){
+            height: 320px;
+        }
+        & div{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-navigator{
+        width: 100%;
+        height: 100%;
+    }
+    &-location{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        @include media($xs){
+            align-items: center;
+        }
+    }
+    &-title{
+        max-width: 450px;
+        width: 100%;
+        font-size: 40px;
+        line-height: 105%;
+        font-family: 'SM';
+        color: var(--text);
+        @include media($xl){
+            @include title();
+        }
+        @include media($xs){
+            text-align: center;
+        }
+    }
+    &-descr{
+        max-width: 585px;
+        width: 100%;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 105%;
+        color: var(--text);
+        @include media($xs){
+            text-align: center;
+        }
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @include media($xs){
+            text-align: center;
+        }
+    }
+    &-li{
+        font-size: 25px;
+        line-height: 105%;
+        font-family: 'Montserrat';
+        color: var(--text);
+    }
+    &-p{
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 105%;
+        color: var(--dark);
+        margin-top: 10px;
+    }
+    &-btn{
+        background: $text;
+        color: $white;
+        padding: 19px 58px;
+        &:hover{
+            background: $red;
+        }
+    }
+    &-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include media($xs){
+            align-items: center;
+        }
+    }
+    &-btns p{
+        font-size: 16px;
+        line-height: 105%;
+        font-family: 'Montserrat';
+        color: var(--text);
+        margin-top: 10px;
+        opacity: 0.5;
+        color: var(--text);
+    }
+    &-text{
+        font-size: 25px;
+        line-height: 105%;
+        letter-spacing: 0.11em;
+        opacity: 0.5;
+        color: var(--text);
+        font-family: 'MT';
+    }
+}

@@ -1,0 +1,45 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.bg1{
+    right: 40%;
+    top: 0%;
+    // @include media($xl){
+    //     left: 30%;
+    // }
+}   
+.bg2{
+    left: 0%;
+    top: 80%;
+}
+.bg3{
+    right: 0%;
+    top: 5%;
+    transform: matrix(0.52, -0.85, -0.85, -0.52, 0, 0);
+} 
+.bg4{
+    right: 0%;
+    top: 48%;
+} 
+.bg5{
+    left: 0%;
+    bottom: 20%;
+} 
+.bg6{
+    right: 0%;
+    top: 90%;
+} 
+@import 'common/grid.scss',
+        'common/common.scss',
+        'common/root.scss',
+        'components/modal/modal.scss',
+        'components/header.scss',
+        'components/header/burger.scss',
+        'components/main/catalog.scss',
+        'components/main/gallery.scss',
+        'components/main/order.scss',
+        'components/main/contact.scss',
+        'components/main.scss',
+        'components/footer.scss';
+

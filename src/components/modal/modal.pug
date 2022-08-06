@@ -1,0 +1,16 @@
+.modal 
+    .modal__content 
+        img.modal__content-bg(src="images/lg1.png", alt="")
+        img.modal__content-bg(src="images/lg1.png", alt="")
+        a.modal__content-close.icon-cross.close(href="#!") 
+        h2.modal__content-title менеджер перезвонит вам в ближайшее время
+        p.modal__content-text Заполните поля ниже
+        form.modal__content-form#form(action="/" method="POST")
+            label.modal__content-label
+                input.modal__content-input.input(type="text" placeholder="Имя" name="name")
+            label.modal__content-label
+                input.modal__content-input.input(type="text" placeholder="Номер телефона" name="number")
+            .modal__content-btns.btns 
+                button.modal__content-btn.btn Отправить заявку
+                p Нажимая на кнопку вы даете согласие на обработку данных
+include result.pug 

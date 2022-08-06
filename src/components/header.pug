@@ -1,0 +1,39 @@
+header.header.container
+   .header__content
+      img.bg1.spots(src="images/lg1.png", alt="")
+      img.bg2.spots(src="images/lg1.png", alt="")
+      .header__left  
+         .header__nav-content 
+            nav.header__nav 
+               a.header__nav-logo(href="#!" name="header")
+                  img.header__nav-logo.logo(src="images/Logolg.svg", alt="")
+               .header__nav-call 
+                  a.header__nav-num(href="#+7 (962) 88-777-51") +7 (962) 88-777-51
+                  a.header__nav-link.button(href="#!") Заказать обратный звонок
+               a.header__nav-menu(href="#!")
+                  span.header__nav-moon.icon-moon.moon-lg(href="#!") 
+                  img.header__nav-burger(src="images/burgerlg.svg", alt="")
+               include header/burger.pug  
+         .header__box 
+            .header__box-image 
+               img.header__box-img(src="images/left.png", alt="")
+            .header__box-menu
+               h2.header__box-pretitle.title АВТОРСКИЕ
+               .header__box-titles
+                  h2.header__box-title.title  КУХНИ 
+                  h2.header__box-title.title  В СОЧИ 
+               .header__box-links
+                  a.header__box-link.button(href="#!") Бесплатный замер 
+                  a.header__box-link.button(href="#!")  Расчет стоимости кухни
+         .header__box-content                  
+           .header__box-last 
+               a.header__box-text(href="#catalog") Более 1000 фото в каталоге 
+               ul.header__box-list 
+                  li.header__box-li 
+                     a.header__box-icon.icon-tg(href="#!")   
+                  li.header__box-li 
+                     a.header__box-icon.icon-call(href="#!")   
+                  li.header__box-li 
+                     a.header__box-icon.icon-fb(href="#!")   
+      .header__right 
+         img.header__right-img(src="images/right.jpg", alt="")

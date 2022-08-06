@@ -1,0 +1,25 @@
+.main__order
+        .main__order-fon 
+            .main__order-bg 
+                .main__order-info.row
+                    .main__order-descr  
+                        p.main__order-text.text ЗАКАЖИТЕ БЕСПЛАТНЫЙ ЗАМЕР И ДИЗАЙН
+                        p.main__order-call Оставьте заявку и мы вам перезвоним
+                    form.main__order-form#form2(action="/" method="POST")
+                        label.main__order-label.label  
+                            input.main__order-input.input(type="text" placeholder="Имя" name="name") 
+                        label.main__order-label.label
+                            input.main__order-input.input(type="text" placeholder="Ваш номер" name="number") 
+                        .main__order-btns.btns 
+                            button.main__order-btn.btn Отправить заявку
+                            p Нажимая на кнопку вы даете согласие на обработку данных
+        .main__order-company.row#company
+            h2.main__order-title РАБОТАЕМ С ЛУЧШИМИ
+            -let logos = ['b1.png','b2.png','b3.png','b4.png','b5.png','b6.png']
+            .main__order-logotips
+                each el in logos
+                    .main__order-item
+                        img.main__order-img(src='images/'+el, alt="") 
+
+
+

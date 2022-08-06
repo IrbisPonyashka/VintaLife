@@ -1,0 +1,289 @@
+body{
+    background: var(--Light);  
+}
+.header{
+    margin-bottom: 50px;
+    &__content{
+        position: relative;
+        display: flex;
+        align-items: center;
+        @include media($boxXl){
+            // flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__right{
+        max-width: 730px;
+        width: 100%;
+        height: 800px;
+        // height: 100%;
+        @include media($xl){
+            display: none;
+        }
+        &-img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__left{
+        max-width: 1190px;
+        width: 100%;
+        height: 800px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 20px;
+        gap: 30px;
+            @include media($xl){
+                padding: 0px;
+            }
+    }
+    &__nav{
+        max-width: 985px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 30px 0;
+        @include media($boxXl){
+            max-width: 1140px;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 10px;
+        @include media($xl){
+            justify-content: space-between;
+            @include media($sm+6){
+                justify-content: space-evenly;
+            }
+        }
+        }
+        &-content{
+            display: flex;
+            justify-content: flex-end;
+        }
+        &-call{
+            display: flex; 
+            align-items: center;
+            gap: 15px;
+            @include media($sm+6){
+                display: none;
+            }
+        }
+        &-num{
+            font-size: 16px;
+            line-height: 115%;
+            color: var(--text);
+            font-family: 'Montserrat';
+            font-weight: 400;
+        }
+        &-link{
+            color: var(--green);
+            border: 3px solid var(--green);
+            padding: 20px 28px;
+            &:hover{
+                background: $green;
+                border:3px solid $green;
+                color: $white;
+            }
+        }
+        &-menu{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+           
+        }
+        &-moon{
+            font-size: 18px;
+            background: $text;
+            color: $Light;
+            padding: 7px 10px;
+            border-radius: 50%;
+            &.moon-bg{
+                background: $Light;
+                color: $text;
+            }
+        }
+        
+    }
+    &__box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        @include media($xl){
+            flex-direction: row;
+            align-items: center;
+            padding: 0 10px;
+        }
+        &-image{
+            max-width: 470px;
+            width: 100%;
+            height: 545px;
+            // position: relative;
+            @include media($boxXl){
+                position: absolute;
+                max-width: 100%;
+                // width: 100%;
+                height: 120%;
+                // width: 100%;
+                // height: 100%;
+                // top: 25%;
+                // left: 10%;
+                // @include media($box){
+                //     top: 30%;
+                //     left: 10%;
+                //     @include media($xl){
+                //         top: 18%;
+                //         left: 14%;
+                //         @include media
+                //     }
+                // }
+            }
+            
+        }
+        &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            max-width: 490px;
+            min-width: 260px;
+            width: 100%;
+            @include media($boxXl){
+                border-radius: 10px;
+                background: rgba(0, 0, 0, 0.342);
+                backdrop-filter: blur(6px);
+                padding: 30px 30px;
+                // margin-top: 100px;
+                @include media($box){
+                    margin-top:50px;
+                    @include media($xl){
+                        // padding: 50px 20px;
+                        // width: 65%;
+                        // height: 90%;
+                    }
+                }
+            }
+        }
+        &-pretitle{
+            font-size: 70px;
+            line-height: 115%;
+            font-family: 'SM';
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 0.5px var(--text);
+            @include media($boxXl){
+                -webkit-text-stroke: 0.5px $Light;
+            }
+        }
+        &-titles{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        &-title{
+            max-width: 528px;
+            width: 100%;
+            height: 60px;
+            font-size: 60px;
+            line-height: 30px;
+            color: var(--text);
+            font-family: 'SM';
+            &:nth-of-type(2){
+            margin-right: 40%;
+            }
+            &:nth-of-type(1){
+            margin-left: 38%;
+            }
+            @include media($boxXl){
+                color: $Light;
+            }
+        }
+        &-links{
+            max-width: 260px;
+            width: 100%;
+            height: 108px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+            gap: 10px;
+            margin-right: 16%;
+            @include media($box){
+                margin-right: 0;
+            }
+        }
+        &-link{
+            width: 100%;
+            height: 100%;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &:nth-of-type(2):hover,
+            &:nth-of-type(1){
+                background: $text;
+            }
+            &:nth-of-type(1):hover,
+            &:nth-of-type(2){
+                background: $red;
+            }
+        }
+        &-last{
+            max-width: 985px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 60px 0;
+            @include media($xs){
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &-list{
+            display: flex;
+            gap: 30px;
+        }
+        &-text{
+            font-size: 16px;
+            line-height: 105%;
+            color: var(--text);
+            font-family: 'Montserrat';
+            font-weight: 700;
+            position: relative;
+            &::after{
+                content: '';
+                display: block;
+                max-width: 45px;
+                width: 100%;
+                height: 2px;
+                background: var(--text);
+                position: absolute;
+                right: -55px;
+                top: 10px;
+                @include media($xs - 100){
+                    display: none;
+                }
+            }
+            
+        }
+        &-icon{
+            font-size: 25px;
+            color: var(--green);
+        }
+    }
+}
