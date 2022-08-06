@@ -28,29 +28,3 @@ item.forEach(el => {
 
 
 
-// if(el == array[0]){
-//             text[0].classList.remove('active')
-//             price[0].classList.remove('active')
-//             link[0].classList.remove('active')
-//         }else if(el == array[1]){
-//             text[1].classList.remove('active')
-//             price[1].classList.remove('active')
-//             link[1].classList.remove('active')
-//         }else if(el == array[2]){
-//             text[2].classList.remove('active')
-//             price[2].classList.remove('active')
-//             link[2].classList.remove('active')
-//         }
-        // if(el == array[0]){
-        //     text[0].classList.add('active')
-        //     price[0].classList.add('active')
-        //     link[0].classList.add('active')
-        // }else if(el == array[1]){
-        //     text[1].classList.add('active')
-        //     price[1].classList.add('active')
-        //     link[1].classList.add('active')
-        // }else if(el == array[2]){
-        //     text[2].classList.add('active')
-        //     price[2].classList.add('active')
-        //     link[2].classList.add('active')
-        // }
