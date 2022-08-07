@@ -5,7 +5,6 @@ let slidePrev = document.querySelector('.main__kitchen-left'),
     item = document.querySelectorAll('.main__kitchen-item'),
     itemOne = document.querySelector('.main__kitchen-item'),
     kitchen = document.querySelector('.main__kitchen');
-    let log = document.querySelector('.header__nav-show');
     let img = [1,2,3,4];
     let widthItem = itemOne.offsetWidth+60;
     const screenWidth = window.screen.width
@@ -13,8 +12,6 @@ let slidePrev = document.querySelector('.main__kitchen-left'),
     
     // let sliderWidth = itemOne.offsetWidth*item.length
     // slidersImages.style = `width:${sliderWidth}px;`
-    log.innerHTML = screenWidth;
-    console.log(log);
 
     function getScreenWidth(screenWidth,length){
         if(screenWidth > 992 && screenWidth < 1670){
