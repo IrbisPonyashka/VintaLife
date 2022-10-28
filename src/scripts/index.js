@@ -9,6 +9,7 @@ import '@/scripts/components/main/order.js'
 import '@/scripts/components/main.js'
 import '@/scripts/components/footer.js'
 
+import '@/images/svg/VintalLife.png'
 import '@/images/svg/moon.svg'
 import '@/images/svg/burgerlg.svg'
 import '@/images/svg/burgerbg.svg'

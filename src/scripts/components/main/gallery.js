@@ -5,7 +5,11 @@ let link = document.querySelectorAll('.main__kitchen-link'),
     body = document.querySelector('.body'),
     popup = document.querySelector('.main__gallery-content');
 
-link.forEach(el => {el.addEventListener('click' , () => { popup.classList.add('active'); fon.classList.add('active'); body.style = 'overflow: hidden;'})});
+link.forEach(el => {el.addEventListener('click' , () => {
+    popup.classList.add('active');
+    fon.classList.add('active'); 
+    body.style = 'overflow: hidden;'
+})});
 
 close.addEventListener('click', () => { 
     popup.classList.remove('active');

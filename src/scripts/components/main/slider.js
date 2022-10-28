@@ -37,3 +37,6 @@ kitchen.addEventListener('mouseover', () => {clearTimeout(interval)})
 kitchen.addEventListener('mouseout', () => {interval = setInterval( () => nextSlide(), 5000)})
 slidePrev.addEventListener('click', prevSlide)
 slideNext.addEventListener('click', nextSlide)
+
+
+
